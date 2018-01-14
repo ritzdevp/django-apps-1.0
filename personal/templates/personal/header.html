@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Harrison Kinsley</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+
+	<style type="text/css">
+		html,
+		body {
+		  height:100%
+		}
+	</style>
+</head>
+
+<body class="body" style="background-color:whitesmoke">
+	<div class="container-fluid" style="min-height:95%; ">
+		<div class="row">
+			  <div class="col-sm-2">
+				  <br>
+				  <center>
+					<img src="{% static 'personal/img/code.jpeg' %}" class="responsive-img" style='max-height:100px; border-radius:60%' alt="face">
+				  </center>
+			  </div>
+			  <div class="col-sm-10">
+				  <br>
+				  <center>
+				  <h3 style="color:#069">ritzdevp</h3>
+				  </center>
+			  </div>
+		</div><hr>
+
+		<div class="row">
+		  <div class="col-sm-2">
+		  <br>
+
+		  <br>
+		   <!-- Great, til you resize. -->
+			<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
+			<div class="well bs-sidebar" id="sidebar" style="background-color:whitesmoke">
+			  <ul class="list-group">
+					<li class="list-group-item" style="background-color:#FEF9E7"><a href='/'>Home</a></li>
+
+					<li class="list-group-item" style="background-color:#E8F8F5"><a href='/blog/'>Blog</a></li>
+
+					<li class="list-group-item" style="background-color:#FADBD8"><a href='/contact/'>Contact</a></li>
+			  </ul>
+
+
+			</div> <!--well bs-sidebar affix-->
+		  </div> <!--col-sm-2-->
+		  <div class="col-sm-10">
+
+			<div class='container-fluid'>
+			<br><br>
+			   {% block content %}
+			   {% endblock %}
+			</div>
+		  </div>
+		</div>
+	</div>
+	<footer>
+		<div class="container-fluid" style='margin-left:15px'>
+
+			<a href="#" target="blank"><i class="fa fa-github" style="font-size:36px"> | </i></a>
+			<a href="#" target="blank"><i class="fa fa-linkedin" style="font-size:36px"> | </i></a>
+			<a href="#" target="blank"><i class="fa fa-twitter" style="font-size:36px"> | </i></a>
+			<a href="#" target="blank"><i class="fa fa-google" style="font-size:36px"></i></a>
+		</div>
+	</footer>
+
+</body>
+
+</html>
